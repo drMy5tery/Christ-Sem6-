@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.myapplication">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission
+        android:name="android.permission.CAMERA"
+        android:required="true"
+        android:requiredFeature="true" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/votezy2"
+        android:label="Votezy"
+        android:roundIcon="@drawable/votezy2"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApplication">
+        <activity
+            android:name=".super_admin.super_admin_registration"
+            android:exported="true" />
+        <activity
+            android:name=".voters.candlist"
+            android:exported="true" />
+        <activity
+            android:name=".voters.sa_vote"
+            android:exported="true" />
+        <activity
+            android:name=".candidates.userlist2"
+            android:exported="true" />
+        <activity
+            android:name=".candidates.userlist"
+            android:exported="true" />
+        <activity
+            android:name=".voters.sa_profile"
+            android:exported="true" />
+        <activity
+            android:name=".candidates.candidateDetails"
+            android:exported="true" />
+        <activity
+            android:name=".voters.sa_prompt"
+            android:exported="true" />
+        <activity
+            android:name=".candidates.canditateRegisteration"
+            android:exported="true" />
+        <activity
+            android:name=".candidates.addCandidates"
+            android:exported="true" />
+        <activity
+            android:name=".test_dynamic_table"
+            android:exported="true" />
+        <activity
+            android:name=".splash_screen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".voters.sa_home"
+            android:exported="true" />
+        <activity
+            android:name=".super_admin.super_admin_login"
+            android:exported="true" />
+        <activity
+            android:name=".admin.admin_upload_photo"
+            android:exported="true" />
+        <activity
+            android:name=".admin.admin_validation"
+            android:exported="true" />
+        <activity
+            android:name=".admin.admin_registeration"
+            android:exported="true" />
+        <activity
+            android:name=".admin.admin_face_upload"
+            android:exported="true" />
+        <activity
+            android:name=".super_admin.superadmin_add_admin"
+            android:exported="true" />
+        <activity
+            android:name=".super_admin.super_admin_home"
+            android:exported="true" />
+        <activity
+            android:name=".admin.admin_add_users"
+            android:exported="true" />
+        <activity
+            android:name=".admin.admin_login"
+            android:exported="true" />
+        <activity
+            android:name=".admin.admin_home"
+            android:exported="true" />
+        <activity
+            android:name=".voters.sa_register"
+            android:exported="true" />
+        <activity
+            android:name=".samp_MainActivity2"
+            android:exported="true" />
+        <activity
+            android:name=".voters.sa_face"
+            android:exported="true" />
+        <activity
+            android:name=".voters.sa_validate"
+            android:exported="true" />
+        <activity
+            android:name=".voters.sa_upload"
+            android:exported="true" />
+        <activity
+            android:name=".sa_MainActivity3"
+            android:exported="true" />
+        <activity
+            android:name=".voters.sa_login"
+            android:exported="true" />
+        <activity
+            android:name=".choose_user_type"
+            android:exported="true" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

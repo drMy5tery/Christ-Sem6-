@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CAF0F8"
+    android:backgroundTint="#CAF0F8"
+    tools:context=".choose_user_type">
+
+    <ImageView
+        android:id="@+id/imageView16"
+        android:layout_width="609dp"
+        android:layout_height="805dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bg2" />
+
+    <ImageView
+        android:id="@+id/imageView17"
+        android:layout_width="104dp"
+        android:layout_height="179dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/sa_bbc" />
+
+    <ImageView
+        android:id="@+id/imageView18"
+        android:layout_width="86dp"
+        android:layout_height="162dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.953"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.986"
+        app:srcCompat="@drawable/sa_bb3" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="305dp"
+        android:layout_height="136dp"
+        android:text="Choose account type"
+        android:textAlignment="center"
+        android:textColor="#03045E"
+        android:textSize="45sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.058" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="298dp"
+        android:layout_height="79dp"
+        android:text="Select the type of account to start your app."
+        android:textAlignment="center"
+        android:textColor="#FCFDFD"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8"
+        app:layout_constraintVertical_bias="0.027" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="158dp"
+        android:layout_height="128dp"
+        android:backgroundTint="#CAF0F8"
+        android:drawableTop="@drawable/sa_admin"
+        android:onClick="admin_login"
+        android:text="Admin"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="#E91E63"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.109"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9"
+        app:layout_constraintVertical_bias="0.174" />
+
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="148dp"
+        android:layout_height="151dp"
+        android:backgroundTint="#CAF0F8"
+        android:drawableTop="@drawable/sa_voters"
+        android:onClick="voter_login"
+        android:text="Voter"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="#E91E63"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button9"
+        app:layout_constraintVertical_bias="0.19" />
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="162dp"
+        android:layout_height="126dp"
+        android:backgroundTint="#CAF0F8"
+        android:drawableTop="@drawable/sa_superadmin"
+        android:onClick="sAdmin_login"
+        android:text="Super Admin"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="#E91E63"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.449"
+        app:layout_constraintStart_toEndOf="@+id/button8"
+        app:layout_constraintTop_toBottomOf="@+id/textView9"
+        app:layout_constraintVertical_bias="0.177" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

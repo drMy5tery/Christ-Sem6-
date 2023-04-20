@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="adding_admin">ADDING ADMIN</string>
+    <string-array name="supAdInst">
+        <item>Institute/Organization</item>
+        <item>Christ University</item>
+    </string-array>
+</resources>
