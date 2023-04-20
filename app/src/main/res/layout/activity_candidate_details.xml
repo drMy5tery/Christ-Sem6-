@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".candidates.candidateDetails">
+
+    <ImageView
+        android:id="@+id/imageView25"
+        android:layout_width="187dp"
+        android:layout_height="208dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/sa_bgg" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="200dp"
+        android:layout_height="91dp"
+        android:text="Enter Candidate Details"
+        android:textAlignment="center"
+        android:textColor="#03045E"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageView25"
+        app:layout_constraintHorizontal_bias="0.041"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.075" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="217dp"
+        android:layout_height="32dp"
+        android:text="Upload Oath (if any)"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btnUpload4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.164"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.97" />
+
+    <Button
+        android:id="@+id/btnUpload4"
+        android:layout_width="217dp"
+        android:layout_height="53dp"
+        android:layout_weight="1"
+        android:backgroundTint="#EBEDED"
+        android:drawableLeft="@drawable/up"
+        android:text="Upload"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="#2196F3"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:onClick="SelectImage"
+        app:layout_constraintBottom_toTopOf="@+id/textView20"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.17"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.985" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="199dp"
+        android:layout_height="27dp"
+        android:text="Format : png/pdf/jpeg"
+        android:textAlignment="center"
+        android:textColor="#9F9999"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.155"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.963" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/out1"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="344dp"
+        android:layout_height="90dp"
+        android:hint="Name"
+        app:counterEnabled="true"
+        app:counterMaxLength="15"
+        app:endIconMode="clear_text"
+        app:helperTextTextColor="@android:color/holo_red_light"
+        app:layout_constraintBottom_toTopOf="@+id/out2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.477"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView18"
+        app:layout_constraintVertical_bias="0.659">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inp4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/sa_can"
+            android:textSize="16sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/out4"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="347dp"
+        android:layout_height="100dp"
+        android:hint="Email id"
+        app:counterEnabled="true"
+        app:counterMaxLength="30"
+        app:endIconMode="clear_text"
+        app:helperTextTextColor="@android:color/holo_red_light"
+        app:layout_constraintBottom_toTopOf="@+id/textView19"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.945">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inp6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/sa_mail"
+            android:textSize="16sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/out2"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="350dp"
+        android:layout_height="94dp"
+        android:hint="Position"
+        app:counterEnabled="true"
+        app:counterMaxLength="15"
+        app:endIconMode="clear_text"
+        app:helperTextTextColor="@android:color/holo_red_light"
+        app:layout_constraintBottom_toTopOf="@+id/out4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.426"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.925">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inp5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/sa_jobposi"
+            android:textSize="16sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/button13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="connect"
+        android:text="Submit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.889"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.901" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

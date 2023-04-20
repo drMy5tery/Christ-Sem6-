@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "255565510406",
+    "firebase_url": "https://votezytesting-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "votezytesting",
+    "storage_bucket": "votezytesting.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:255565510406:android:877746ead41f457e421087",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "255565510406-2br8bq5dfcbjm0hfdclbvj49vb4pj6hr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCaQCo6ydi4ogNgO4upDjrbkBF3EVArhYE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "255565510406-2br8bq5dfcbjm0hfdclbvj49vb4pj6hr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
